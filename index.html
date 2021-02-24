@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Family Tree</title>
+
+    <script src="json/persons.json"></script>
+
+    <script>
+        family = family
+        function myFunction() {
+            document.getElementById("myText").innerHTML = family;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Family Tree by Carlos Hernandez</h1>
+
+    <div class="tree" style="height: auto;">
+        <div style="display: flex; flex-direction: column; justify-content: center; width: 100%;">
+            <div class="tree-container">
+                <div class="father-side">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <script type="text/javascript">
+                                    document.write(family[4].father, ' and ' ,family[4].mother)
+                                </script>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <script type="text/javascript">
+                                            document.write(family[4].name)
+                                        </script>
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a href="">
+                                        <script type="text/javascript">
+                                            document.write(family[0].father)
+                                        </script>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    style="width: 100px; height: 55px;  border-left: 1px solid #ccc; border-right: 1px solid #ccc;; position: absolute; top: 525px;">
+                </div>
+
+                <div class="mother-side"  >
+                    <ul>
+                        <li>
+                            <a href="">
+                                <script type="text/javascript">
+                                    document.write(family[5].mother, ' and ' ,family[5].father)
+                                </script>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <script type="text/javascript">
+                                            document.write(family[0].mother)
+                                        </script>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <script type="text/javascript">
+                                            document.write(family[6].name)
+                                        </script>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <script type="text/javascript">
+                                            document.write(family[7].name)
+                                        </script>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">
+                                                <script type="text/javascript">
+                                                    document.write(family[8].name)
+                                                </script>
+                                            </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tree-container">
+                <div
+                    style="width: 100px; height: 10px;   border-left: 1px solid #94a0b4; border-right: 1px solid #ccc;; border-bottom: 1px solid #ccc;">
+                </div>
+            </div>
+            <div class="tree-container">
+                <div class="childs-side" style="margin-right: 60px;">
+                    <ul style="padding: 0;">
+                        <li>
+                            <a href=""></a>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <script type="text/javascript">
+                                            document.write(family[2].name)
+                                        </script>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a id="myText" href="">
+                                        <script type="text/javascript">
+                                            document.write(family[1].name)
+                                        </script>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <script type="text/javascript">
+                                            document.write(family[0].name)
+                                        </script>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
